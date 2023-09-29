@@ -32,8 +32,8 @@ public class BaseClass {
 	@BeforeClass(groups = {"Smokesuite","Regressionsuite"})
 	public void launchBrowser(/*String browser*/) throws Throwable
 	{
-		//String browser=f.dataFromPropertyFile("browser");
-		String browser=System.getProperty("browser");
+		String browser=f.dataFromPropertyFile("browser");
+		//String browser=System.getProperty("browser");
 		
 				if(browser.equalsIgnoreCase("chrome"))
 				{
